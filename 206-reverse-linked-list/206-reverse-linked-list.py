@@ -15,3 +15,7 @@ class Solution:
             temp = nxt                    #and move the 1st node pointer to 2nd node
         return prev                       #prev will be at end so return prev
         
+        
+        #Time complexity : O(n). Assume that nnn is the list's length, the time complexity is O(n).
+
+        #Space complexity : O(1).

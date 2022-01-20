@@ -18,5 +18,8 @@ class Solution:
             slow = slow.next
             fast = fast.next.next
            
-        return (slow == fast)
+        return (slow == fast)                               #returns true if equal, else false
         
+        
+        #Time complexity : O(n)
+        #Space complexity : O(1). We only use two nodes (slow and fast)

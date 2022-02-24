@@ -9,13 +9,13 @@ class Solution:
         n=0
         stack=[[root]]
         
-        while stack:
+        while stack:                    #if root, append to stack
             while root:
-                stack.append(root)
-                root=root.left
+                stack.append(root)      
+                root=root.left          #basic inorder traversal
             root=stack.pop()
-            n+=1
+            n+=1                        #increment counter and compare to k
             
-            if n == k:
+            if n == k:                  #if equal, found the kth element
                 return root.val
-            root=root.right
+            root=root.right            

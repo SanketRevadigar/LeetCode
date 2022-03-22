@@ -1,11 +1,9 @@
 class Solution:
     def longestDiverseString(self, a: int, b: int, c: int) -> str:
-        # largest = max(a, max(b, c))
         res = []
         cntA, cntB, cntC = 0, 0, 0 # used to count the occurrences of corresponding character 
-        maxCount = max(a, b, c)
-        for i in range(a+b+c):
-            maxCount = max(a, b, c)
+        for i in range(a+b+c):      
+            maxCount = max(a, b, c)         #get max every iteration
             if (a == maxCount and cntA < 2) or (cntB == 2 and a >= 1) or (cntC == 2 and a >= 1):
                 res.append('a')
                 a = a-1
